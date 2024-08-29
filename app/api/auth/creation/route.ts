@@ -31,7 +31,5 @@ export async function GET() {
       },
     });
   }
-  return NextResponse.redirect(
-    "https://airbnb-clone-pahasara-ridmakas-projects.vercel.app"
-  );
+  return NextResponse.redirect("https://airbnb-clone-azure-nine.vercel.app/");
 }
