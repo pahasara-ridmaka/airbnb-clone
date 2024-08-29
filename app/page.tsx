@@ -69,7 +69,7 @@ export default function Home({
   );
 }
 
-export async function ShowItems({
+async function ShowItems({
   searchParams,
 }: {
   searchParams: {
