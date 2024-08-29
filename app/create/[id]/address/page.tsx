@@ -15,7 +15,7 @@ import { BottomBar } from "@/app/components/BottomBar";
 import { useState } from "react";
 import { CreateLocation } from "@/app/actions";
 
-function Page({ params }: { params: { id: string } }) {
+function AddressRoute({ params }: { params: { id: string } }) {
   const { getAllCountries } = useCountries();
   const [locationValue, setLocationValue] = useState("");
   const LazyMap = dynamic(() => import("@/app/components/Map"), {
@@ -59,4 +59,4 @@ function Page({ params }: { params: { id: string } }) {
   );
 }
 
-export default Page;
+export default AddressRoute;
