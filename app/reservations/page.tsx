@@ -4,8 +4,10 @@ import { NoItems } from "../components/NoItems";
 import prisma from "../lib/db";
 import { id } from "date-fns/locale";
 import { redirect } from "next/navigation";
+import { unstable_noStore as noStore } from "next/cache";
 
 async function getData(userId: string) {
+  noStore;
   const data = prisma.reservation.findMany({
     where: {
       userId: userId,
