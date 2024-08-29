@@ -20,7 +20,7 @@ async function getData({
   };
   userId: string | undefined;
 }) {
-  noStore;
+  noStore();
   const data = await prisma.home.findMany({
     where: {
       addedCategory: true,

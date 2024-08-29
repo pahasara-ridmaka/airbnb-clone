@@ -6,7 +6,7 @@ import ListingsCard from "../components/ListingsCard";
 import { unstable_noStore as noStore } from "next/cache";
 
 async function getData(userId: string) {
-  noStore;
+  noStore();
   const data = await prisma.home.findMany({
     where: {
       userId: userId,
