@@ -31,5 +31,5 @@ export async function GET() {
       },
     });
   }
-  return NextResponse.redirect("https://airbnb-clone-azure-nine.vercel.app/");
+  return NextResponse.redirect("https://airbnb-clone-azure-nine.vercel.app");
 }
